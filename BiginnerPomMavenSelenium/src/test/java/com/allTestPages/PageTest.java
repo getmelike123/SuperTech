@@ -2,11 +2,10 @@ package com.allTestPages;
 
 import org.testng.annotations.Test;
 
-import com.allPages.RootPage;
-
 import basePack.BaseClass;
+import pages.RootPage;
 
-public class TestPage extends BaseClass{
+public class PageTest extends BaseClass{
 	
 	@Test
 	public void rootPageTest() {

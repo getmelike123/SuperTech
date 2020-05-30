@@ -2,18 +2,15 @@ package com.allTestPages;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 import com.DataHelper.ExcelFileReader;
-import com.allPages.NextPage;
-import com.allPages.RootPage;
 
 import basePack.BaseClass;
-import io.github.bonigarcia.wdm.WebDriverManager;
+import pages.RootPage;
 
-public class TestPageByMultipleData extends BaseClass{
+public class ByMultipleDataPageTest extends BaseClass{
 	
 	static String filePath="E:\\FacebookData.xlsx";
 	static String sheetName="Data1";
