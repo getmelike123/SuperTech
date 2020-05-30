@@ -1,0 +1,6 @@
+pages\NextPage.class
+com\DataHelper\ExcelFileReader.class
+com\allTestPages\ByMultipleDataPageTest.class
+com\allTestPages\PageTest.class
+pages\RootPage.class
+basePack\BaseClass.class
