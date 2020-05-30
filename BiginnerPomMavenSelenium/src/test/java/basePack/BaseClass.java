@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -58,7 +59,7 @@ public class BaseClass {
 			
 			driver.manage().window().maximize();
 			
-			
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			exthtmlreport=new ExtentHtmlReporter(System.getProperty("user.dir")+"\\test-output\\ExtentHtmlReport.html");
 			exthtmlreport.config().setDocumentTitle("Automation Report");
 			exthtmlreport.config().setReportName("Fuctional Testing Report");
